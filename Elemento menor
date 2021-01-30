@@ -1,0 +1,25 @@
+#include <stdio.h>
+int elementoMenor (int arreglo [], int n){
+ int num;
+ int z;
+ num=arreglo[0];
+ for(z=0; z<n; z++)
+ {
+    if (arreglo [z]<num)
+    { 
+     num=arreglo[z]; 
+    }
+ }
+ printf ("El valor menor es: %d", num);
+ return 0;
+}
+
+--> TEST 
+#include “../programaMenor..c”
+int main(){
+int arreglo []={7,6,5,4,3,2,};
+elementoMenor (arreglo,6);
+int arreglo2 []={-3,0,2,44,6,2,};
+elementoMenor (arreglo2,6);
+return 0; 
+} 
