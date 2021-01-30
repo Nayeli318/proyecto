@@ -1,0 +1,58 @@
+#include <stdio.h> 
+int main() 
+{ 
+ int n, divs, lim; 
+ printf ("Introduce un divisor\n"); 
+ scanf ("%d",& divs); 
+ printf ("Introduce un limite\n"); 
+ scanf ("%d",& lim); 
+if ((lim % divs) == 0) 
+ n = lim; 
+ else{ 
+ n=lim-(lim % divs); cero
+} 
+printf ("El maximo multiplo es: %d",n); 
+ return 0; 
+}
+
+
+--> TEST 
+#include <stdio.h> 
+int main() 
+{ 
+int n; 
+int divs = 2; 
+int lim = 5; 
+if ((lim % divs) == 0) 
+ n = lim; 
+else{ 
+ n=lim-(lim % divs); 
+ } 
+if (n==4) 
+ { 
+ printf("Ok\n"); 
+ printf("Divisor:\%d\n",divs); 
+ printf("Limite:\%d\n\n",lim); 
+ } 
+else 
+{ 
+printf("Error\n"); 
+ return 0; 
+}
+int x; 
+int divs1 = 5; 
+int lim1 = 30; 
+if ((lim1 % divs1) == 0) 
+ x = lim1; 
+else{ 
+ x=lim1-(lim1 % divs1);  } 
+if (x==30) 
+ { 
+ printf("Ok\n"); 
+ printf("Divisor:\%d\n",divs1);  printf("Limite:\%d",lim1);  } 
+else 
+{ 
+printf("Error\n"); 
+ return 0; 
+} 
+}
