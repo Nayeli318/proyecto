@@ -1,0 +1,37 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+int main() 
+{ 
+int k, i, j; 
+char opcion; 
+printf("Introduce el numero de filas que tendra la piramide: "); scanf("%i",&k); 
+getchar(); 
+printf("\n"); 
+for(i=1;i<=k;i++) 
+{ 
+for(j=1;j<=i;j++) 
+{ 
+printf("%i ",i); 
+} 
+printf("\n"); 
+} 
+return 0; 
+}
+
+
+-->TEST 
+#include <stdio.h> #include <stdlib.h> 
+int main() 
+{ 
+int k, i, j; 
+int n; 
+for (n=1;n<=3;n++){ for(i=1;i<=k;i++) 
+{ 
+for(j=1;j<=i;j++) 
+{ 
+printf("%i ",i); 
+} 
+printf("\n"); 
+} 
+return 0; 
+}
