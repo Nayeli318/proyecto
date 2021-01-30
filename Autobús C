@@ -1,0 +1,53 @@
+#include <stdio.h>
+ 
+int calcularPasajeros(int cambios[5][2], int tam)
+{
+	int contador = 0;
+	int totalEntrada = 0;
+	int totalSalida = 0;
+	int resultado;
+ 
+	while (contador <= tam)
+	{
+    	totalEntrada = cambios[contador][0] + totalEntrada;
+    	contador++;
+	}
+	contador = 0;
+	while (contador <= tam)
+	{
+    	totalSalida = cambios[contador][1] + totalSalida;
+    	contador++;
+	}
+	resultado = totalEntrada-totalSalida;
+	printf("Quedan %d pasajeros dentro del autobús.", resultado);
+	return resultado;
+}
+
+
+
+
+
+--> TEST 
+#include “..\index.c”
+Int main()
+{
+int cambios[][2] = {{3, 0},{5, 1},{2, 1},{4, 3},{0, 8}};
+int cambios2[][2] = {{1, 0},{1, 0},{5, 1},{0, 3},{1, 1}};
+if(calcularPasajeros(cambios, 5)==1)
+{
+printf("OK\n");
+}
+else
+{
+printf("Error\n");
+}
+if(calcularPasajeros(cambios2, 5)==3)
+{
+        	printf("OK\n");
+}
+Else
+{
+printf("Error\n");
+}
+return 0;
+}
