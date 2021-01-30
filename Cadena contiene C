@@ -1,0 +1,30 @@
+#include <stdio.h> 
+#include <string.h>
+int main(void) 
+{ 
+ char text1[250]; 
+ char text2[100];  
+ printf("Bienvenido, este programa detecta la presencia de una palabra dentro de otra");
+ printf("\t\nIntroduce una palabra:\n"); 
+ scanf("%s", text1); 
+ printf("\t\nIntroduce la palabra a buscar:\n"); 
+ scanf("%s", text2); 
+   if (strstr(text1, text2) != NULL)  
+ { 
+   printf("\t\n Se encontro la palabra deseada: %s en la palabra %s\n", text2, text1);  } 
+ else { 
+   printf("\t\n Parece que no se encontro la palabra deseada!: %s dentro de %s\n", text2, text1);  } 
+} 
+
+-->TEST 
+#include "..\cadenacontiene.c"
+int main(void)
+{
+char text1[] = "avioneta";
+char text2[] = "avion";
+if (buscar(text1, texto2), 0)
+{
+printf("\t\n Se ha encontrado %s dentro de %s\n", text2, text1);
+} else {
+printf("\t\n Parece que no se ha encontrado %s dentro de %s\n", text2, text1);
+}
